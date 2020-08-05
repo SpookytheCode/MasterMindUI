@@ -69,7 +69,7 @@ div.keyPegGrid {
 
 .codePeg {
   position: relative;
-  
+  margin: auto;
   height: 50px;
   width: 50px;
   top: 4px;

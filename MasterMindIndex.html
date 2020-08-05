@@ -10,7 +10,7 @@
       
     </div>
     <div id="roundRow2" class="roundRows">
-      <div class="keyPegGrid">
+      <div id='keyPegs2' class="keyPegGrid">
         <div class="keyPegHole">
           <div class="keyPeg"></div>
         </div>
@@ -28,7 +28,9 @@
         <div class="codePegHole">
           <div class="codePeg"></div>
         </div>
-        <div class="codePegHole"></div>
+        <div class="codePegHole">
+          <div class="codePeg"></div>
+        </div>
         <div class="codePegHole"></div>
         <div class="codePegHole"></div>
       </div>
@@ -59,6 +61,18 @@
     </div>
   </div>
     <script>
+      // store master code in an array for checking against player guess array
+      let masterCode = [];
+      for (i = 0; i < 5; i++) {
+
+        //array[array.length] = 'blue';
+      }
+
+      for (i = 0; i < 5; i++) {
+        let codeSet = `codePegs${roundCount}`; 
+        let nextPegContainer = document.getElementById(codeSet).children[i];
+        let nextPeg
+      }
       //call to keyPegHole to change color based on logic output ()
       // divChild = document.getElementById("divParent").children[0];
       // toColor = document.getElementById("codePegs2").children[2];
