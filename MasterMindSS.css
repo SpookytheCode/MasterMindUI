@@ -76,3 +76,7 @@ div.keyPegGrid {
   border-radius: 50%;
   background-color: black;
 }
+
+#inputRow {
+  outline: 1px solid black;
+}

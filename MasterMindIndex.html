@@ -3,6 +3,7 @@
 <head>
   <title>Can You Break the Code?</title>
   <link rel="stylesheet" type="text/css" href="MasterMindSS.css">
+  <meta charset="utf-8">
 </head>
 <body>
   <div id="gameBoard">
@@ -31,8 +32,12 @@
         <div class="codePegHole">
           <div class="codePeg"></div>
         </div>
-        <div class="codePegHole"></div>
-        <div class="codePegHole"></div>
+        <div class="codePegHole">
+          <div class="codePeg"></div>
+        </div>  
+        <div class="codePegHole">
+          <div class="codePeg"></div>
+        </div>
       </div>
     </div>
     <div id="roundRow3" class="roundRows">
@@ -59,23 +64,47 @@
     <div id="roundRow10" class="roundRows">
       
     </div>
+
+    <div id="inputBar">
+
+    </div>
+    <div id="submitBar">
+
+    </div>
   </div>
     <script>
       // store master code in an array for checking against player guess array
       let masterCode = [];
-      for (i = 0; i < 5; i++) {
+      let roundCount = 1;
 
-        //array[array.length] = 'blue';
-      }
 
-      for (i = 0; i < 5; i++) {
+      // colors for passing to codePegs and keyPegs
+      let colorBlue = 'blue';
+      let colorRed = 'red';
+      let colorYellow = 'yellow';
+      let colorGreen = 'green';
+      let colorBlack = 'black';
+      let colorWhite = 'white';
+
+
+     let testPegPar = document.getElementById('keyPegs2').getElementsByClassName('codePegHole');
+     let testPeg = testPegPar.querySelectorAll('*');
+     testPeg[0].style.color = 'blue';
+
+      /* for (i = 0; i < 5; i++) {
         let codeSet = `codePegs${roundCount}`; 
-        let nextPegContainer = document.getElementById(codeSet).children[i];
-        let nextPeg
+        let nextPeg = document.getElementById(codeSet).getElementsByClassName('codePeg');
+        
       }
-      //call to keyPegHole to change color based on logic output ()
+      */ 
+      let colorInput = function (colorVal) {
+
+      }
+      // call to keyPegHole to change color based on logic output ()
       // divChild = document.getElementById("divParent").children[0];
       // toColor = document.getElementById("codePegs2").children[2];
+
+      //PART 2 - wins with colors in # position? - patterns that won the most? 
     </script>
 </body>
 </html>
